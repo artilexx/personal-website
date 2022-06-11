@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body { 
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  overflow-y: scroll;
+  background-color: #242426;
+  height: 100%;
+  position: relative;
+}
+
+
+.divider {
+  background-color: #00BBFF;
+  justify-self: center;
+  height: 5px;
+  width: 100%;
+  animation: glow 4s linear infinite;
+  border-radius: 3px;
+  margin: 5vh;
+}
+
+.container{
+  margin-top: 70px;
+  position: relative;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(200%) blur(5px);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10;
+  height: 50px;
+  font-size: 16px;
+  transition: top 0.3s;
+  justify-content: left;
+}
+
+/* navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  margin:  0 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change background on hover */
+.navbar a:hover {
+  color: rgb(24, 197, 255);
+  animation: glow 5s linear infinite;
+}
+
+.contactbar{
+  backdrop-filter: saturate(200%) blur(5px);
+  position: absolute; /* Set the navbar to fixed position */
+  top: 100%; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10;
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contactbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  margin:  0 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+#projectimg {
+  border: 4px solid #393838;
+  display: block;
+  margin-top: 20px;
+  padding: 0 0 0 0;
+  box-shadow: 5px 5px 10px rgb(1, 1, 1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#contactimg{
+  height: 20px;
+  border-radius: 0px;
+
+}
+
+ul {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  padding: 0 0 0 0;
+  user-select: none;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height:  7vw;
+  width:  7vw;
+  z-index: 100;
+  margin: 0 4px;
+}
+
+.letter {
+  position: relative;
+  height: 7vw;
+  width:  7vw;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  font-size: 4.5vw;
+  cursor: pointer;
+  margin: 0 4px 0 4px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="checkbox"]:checked ~ div {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: #00BBFF;
+  text-shadow: 0 0 2px #00BBFF, 0 0 3px #00BBFF;
+  animation: glow 4s linear infinite;
+  
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(95deg);
+  }
+  10% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+
+#projecttitle{
+  font-size: 48px;
+  text-align: left;
+  color: white;
+}
+
+#intro{
+  margin-top: 10vh;
+  font-size:23px;
+  color: white;
+  font-family: "Raleway";
+}
+#myinfo{
+  font-size:23px;
+  color: white;
+  font-family: "Raleway";
+  margin-bottom: 40px;
+}
+
+#projectrow1, #projectrow2, #projectrow3 {
+  padding: 20px;
+}
+
+#projectrow1{
+  background-color: #00BBFF;
+}
+#projectrow2{
+  background-color: #b95cfb;
+}
+#projectrow3{
+  background-color: #00BBFF;
+}
+
+
+#projectinfo{
+  font-family: "Raleway";
+  font-size: 23px;
+  text-align: left;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 770px){
+  #projectinfo{
+      text-align: left;
+  }
+  .letter{
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    margin: 0 2px 0 2px;
+    border-radius: 3px;
+  }
+  input[type="checkbox"]{
+    height: 50px;
+    width: 50px;
+    margin: 0 2px 0 2px;
+  }
+  #myinfo, #intro{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  #projectinfo{
+    font-size: 16px;
+  }
+  #projecttitle{
+    font-size: 32px;
+  }
+}
