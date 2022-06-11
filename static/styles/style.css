@@ -21,6 +21,7 @@ body {
   margin: 5vh;
 }
 
+
 .container{
   margin-top: 70px;
   position: relative;
@@ -57,16 +58,13 @@ body {
 }
 
 .contactbar{
-  backdrop-filter: saturate(200%) blur(5px);
   position: absolute; /* Set the navbar to fixed position */
   top: 100%; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 10;
-  height: 50px;
   font-size: 16px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .contactbar a {
@@ -215,7 +213,7 @@ input[type="checkbox"]:checked ~ div {
     width: 50px;
     font-size: 32px;
     margin: 0 2px 0 2px;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   input[type="checkbox"]{
     height: 50px;
