@@ -10,6 +10,14 @@ body {
   position: relative;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline
+}
+
 
 .divider {
   background-color: #00BBFF;
@@ -75,6 +83,10 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 50px;
+}
+
+.contactbar a:hover{
+  opacity: 0.6;
 }
 
 #projectimg {
