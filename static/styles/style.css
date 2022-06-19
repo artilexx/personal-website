@@ -156,7 +156,7 @@ input[type="checkbox"]:checked ~ div {
     inset 4px 4px 6px rgba(0, 0, 0, 0.2);
   color: #00BBFF;
   text-shadow: 0 0 2px #00BBFF, 0 0 3px #00BBFF;
-  animation: glow 4s linear infinite;
+  animation: glow 6s linear infinite;
   
 }
 

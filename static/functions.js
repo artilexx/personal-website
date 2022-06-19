@@ -10,3 +10,21 @@ function navBarScroll() {
     prevScrollpos = currentScrollPos;
     }
 }
+
+
+function myLoop(checkboxId) {
+    setTimeout(function() {
+    document.getElementById(checkboxId).checked = true; //  your code here
+    checkboxId++
+    console.log(checkboxId)                
+    if (checkboxId < 7) {
+        myLoop(checkboxId);
+    }   //  decrement i and call myLoop again if i > 0
+    }, 1000)
+};         
+
+
+window.onload=function(){
+    navBarScroll();                
+    myLoop(1); 
+}
