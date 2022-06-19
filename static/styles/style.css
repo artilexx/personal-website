@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
-body { 
+body {
+  height  : 100%;
   font-family: 'Poppins', sans-serif;
   display: flex;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: #242426;
   height: 100%;
   position: relative;
